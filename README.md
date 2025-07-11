@@ -1,6 +1,6 @@
 # cargo-pumpkin
 
-A Cargo subcommand that building and running the your Pumpkin plugin.
+A Cargo subcommand that building and running your Pumpkin plugin.
 
 ## Installation
 

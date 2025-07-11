@@ -2,7 +2,7 @@
 name = "cargo-pumpkin"
 version = "0.1.1"
 edition = "2024"
-description = "A Cargo subcommand that building and running the your Pumpkin plugin"
+description = "A Cargo subcommand that building and running your Pumpkin plugin"
 authors = ["Maoyue <maoyue@maoyue.tw>"]
 license = "MIT"
 

@@ -5,6 +5,7 @@ edition = "2024"
 description = "A Cargo subcommand that building and running the your Pumpkin plugin"
 authors = ["Your Name <your.email@example.com>"]
 license = "MIT"
+repository = "https://github.com/MagicTeaMC/cargo-pumpkin"
 
 [[bin]]
 name = "cargo-pumpkin"

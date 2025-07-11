@@ -288,7 +288,7 @@ impl PumpkinRunner {
             ("lib", ".so")
         };
 
-        let plugin_filename = format!("{}{}{}", lib_prefix, name.replace("-", "_"), extension);
+        let plugin_filename = format!("{}{}{}", lib_prefix, name, extension);
         let plugin_path = self
             .current_dir
             .join(format!("target/{}/{}", build_dir, plugin_filename));

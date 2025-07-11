@@ -5,7 +5,7 @@ A Cargo subcommand that building and running the your Pumpkin plugin.
 ## Installation
 
 ```bash
-cargo install --path .
+cargo install cargo-pumpkin
 ```
 
 ## Usage

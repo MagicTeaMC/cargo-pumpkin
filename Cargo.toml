@@ -1,11 +1,15 @@
 [package]
 name = "cargo-pumpkin"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "A Cargo subcommand that building and running the your Pumpkin plugin"
 authors = ["Maoyue <maoyue@maoyue.tw>"]
 license = "MIT"
+
 repository = "https://github.com/MagicTeaMC/cargo-pumpkin"
+readme = "README.md"
+keywords = ["gamedev", "minecraft"]
+categories = ["command-line-utilities"]
 
 [[bin]]
 name = "cargo-pumpkin"

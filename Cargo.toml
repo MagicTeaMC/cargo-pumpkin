@@ -3,7 +3,7 @@ name = "cargo-pumpkin"
 version = "0.1.0"
 edition = "2024"
 description = "A Cargo subcommand that building and running the your Pumpkin plugin"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Maoyue <maoyue@maoyue.tw>"]
 license = "MIT"
 repository = "https://github.com/MagicTeaMC/cargo-pumpkin"
 

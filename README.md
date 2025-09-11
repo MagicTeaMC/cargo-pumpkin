@@ -1,5 +1,8 @@
 # cargo-pumpkin
 
+> [!WARNING]  
+> Pumpkin is still under heavy developing, this tool might be unusable sometimes
+
 A Cargo subcommand that building and running your Pumpkin plugin.
 
 ## Installation

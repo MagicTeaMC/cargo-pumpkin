@@ -289,9 +289,22 @@ impl PumpkinRunner {
         };
 
         let plugin_filename = format!("{}{}{}", lib_prefix, name, extension);
-        let plugin_path = self
+        let mut plugin_path = self
             .current_dir
             .join(format!("target/{}/{}", build_dir, plugin_filename));
+
+        if !plugin_path.exists() {
+            let name_with_underscores = name.replace('-', "_");
+            let plugin_filename_alt =
+                format!("{}{}{}", lib_prefix, name_with_underscores, extension);
+            let plugin_path_alt = self
+                .current_dir
+                .join(format!("target/{}/{}", build_dir, plugin_filename_alt));
+
+            if plugin_path_alt.exists() {
+                plugin_path = plugin_path_alt;
+            }
+        }
 
         if plugin_path.exists() {
             let plugins_dir = self.run_dir.join("plugins");
@@ -299,6 +312,11 @@ impl PumpkinRunner {
                 .await
                 .context("Failed to create plugins directory")?;
 
+            let plugin_filename = plugin_path
+                .file_name()
+                .unwrap()
+                .to_string_lossy()
+                .to_string();
             let dest = plugins_dir.join(&plugin_filename);
             fs::copy(&plugin_path, &dest)
                 .await
